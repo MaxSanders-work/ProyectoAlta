@@ -23,5 +23,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags:  maxsanders/ ${{ github.repository }}:latest
+          tags: maxsanders/proyectoalta:latest
           
