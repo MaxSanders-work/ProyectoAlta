@@ -23,5 +23,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags:  ${{ secrets.DOCKER_USERNAME }}1/ ${{ github.repository }}:latest
+          tags:  maxsanders/ ${{ github.repository }}:latest
           
