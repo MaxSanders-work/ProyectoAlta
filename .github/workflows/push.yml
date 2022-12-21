@@ -35,7 +35,7 @@ jobs:
       env:
         KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
       with:
-        args: set image --record deployment/proyectoalta proyectoalta=${{ github.repository }}:latest
+        args: set image --record deployment/proyectoalta proyectoalta=maxsanders:latest
     - name: verify deployment
       uses: steebchen/kubectl@master
       env:
