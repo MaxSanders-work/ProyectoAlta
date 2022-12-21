@@ -28,7 +28,7 @@ jobs:
   deploy-to-cluster:
     name: deploy to cluster
     runs-on: ubuntu-latest
-    needs: build-and-push
+    needs: build
     steps:
     - name: deploy to cluster
       uses: steebchen/kubectl@master
