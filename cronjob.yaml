@@ -6,10 +6,10 @@ spec:
   schedule: "*/1 * * * *"
   jobTemplate:
     spec:
+      activeDeadlineSeconds: 30
       template:
         spec:
           containers:
           - name: hello
             image: maxsanders/db:latest
-            imagePullPolicy: IfNotPresent
-          restartPolicy: Never
+          restartPolicy: OnFailure
