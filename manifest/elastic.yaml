@@ -1,40 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: proyectoalta
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      role: proyectoalta
-  template:
-    metadata:
-      labels:
-        role: proyectoalta
-    spec:
-      containers:
-      - name: proyectoalta
-        image: maxsanders/proyectoalta
-        ports:
-        - containerPort: 3000
----
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: proyectoalta-service
-#spec:
-#  selector:
-#    app: proyectoalta
-#  ports:
-#    - port: 3000
-#      targetPort: 3000
-#      nodePort: 30000
-#  externalTrafficPolicy: Local
-#  type: NodePort
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
   name: elasticsearch
 spec:
   replicas: 2
